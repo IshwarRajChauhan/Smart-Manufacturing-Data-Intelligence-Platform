@@ -20,7 +20,7 @@ kinesis.put_record(
         PartitionKey=data["machine_id"]
     )
 
-for _ in range(10):
+for _ in range(1):
 
     data = {
     "machine_id": f"M{random.randint(1,5):03}",
